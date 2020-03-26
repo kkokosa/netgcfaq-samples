@@ -19,7 +19,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Chapter3.Library\Chapter3.Library.csproj" />
+    <ProjectReference Include="..\Chapter3.CIL\Chapter3.CIL.csproj" />
+    <ProjectReference Include="..\Chapter3.Core\Chapter3.Core.csproj" />
   </ItemGroup>
 
 </Project>

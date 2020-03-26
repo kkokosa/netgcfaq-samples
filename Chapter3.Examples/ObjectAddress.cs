@@ -4,7 +4,8 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Text;
-using Chapter3.Library;
+using Chapter3.CIL;
+using Chapter3.Core;
 
 namespace Chapter3.Examples
 {
@@ -18,6 +19,7 @@ namespace Chapter3.Examples
             Console.WriteLine($"Method2: {obj.GetAddress2():x16}");
             Console.WriteLine($"Method3: {obj.GetAddress3():x16}");
             Console.WriteLine($"Method4: {obj.GetAddress4():x16}");
+            Console.WriteLine($"Method4: {obj.GetAddress():x16}");
         }
 
         class SampleClass
