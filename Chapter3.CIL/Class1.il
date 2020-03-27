@@ -1,4 +1,4 @@
-﻿.class public Chapter3.CIL.Class1
+﻿.class public Chapter3.CIL.ObjectExtensionsCIL
 {
 	.custom instance void [System.Private.CoreLib]System.Runtime.CompilerServices.ExtensionAttribute::.ctor() = (01 00 00 00)
 	
