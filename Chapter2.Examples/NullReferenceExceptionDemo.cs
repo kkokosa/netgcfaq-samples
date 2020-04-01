@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Chapter1
 {
-    //class NullReferenceException
+    //class NullReferenceExceptionDemo
     //{
     //    public static void Main()
     //    {

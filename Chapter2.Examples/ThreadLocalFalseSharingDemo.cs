@@ -41,9 +41,14 @@ namespace Chapter2.Examples
             //}
         }
 
-        /// <summary>
-        /// It is not easy to compact object-by-object even for TLS data because TLS 
-        /// </summary>
+        /// It is not easy to compact object-by-object even for TLS data because TLS data is most typically interleaved with
+        /// the data required for TLS bookkeeping:
+        /// 0000022a61982318 00007ffd9c5faba0       24     Chapter2.Examples.ThreadLocalFalseSharingDemo+SomeTLSData
+        //  0000022a61982330 00007ffd9c6510a0       32     System.Threading.ThreadLocal`1+LinkedSlotVolatile[[Chapter2.Examples.ThreadLocalFalseSharingDemo + SomeTLSData, Chapter2.Examples]][]
+        //  0000022a61982350 00007ffd9c6514c0       32     System.Threading.ThreadLocal`1+FinalizationHelper[[Chapter2.Examples.ThreadLocalFalseSharingDemo + SomeTLSData, Chapter2.Examples]]
+        //  0000022a61982370 00007ffd9c636098       48     System.Threading.ThreadLocal`1+LinkedSlot[[Chapter2.Examples.ThreadLocalFalseSharingDemo + SomeTLSData, Chapter2.Examples]]
+        //  ...
+        //  0000022a61982520 00007ffd9c5faba0       24    	Chapter2.Examples.ThreadLocalFalseSharingDemo+SomeTLSData
         public void Run()
         {
             var threadId = Thread.CurrentThread.ManagedThreadId;

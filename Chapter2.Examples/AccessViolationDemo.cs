@@ -52,7 +52,7 @@ namespace Chapter1
 
         static void Main()
         {
-            var pointer = new Pointer() {Address = new[] {long.MaxValue}};
+            var pointer = new Pointer() {Address = new[] { long.MaxValue }};
             pointer.Reference[0].ToString();
         }
     }
