@@ -49,6 +49,8 @@ namespace Chapter2.Examples
         //  0000022a61982370 00007ffd9c636098       48     System.Threading.ThreadLocal`1+LinkedSlot[[Chapter2.Examples.ThreadLocalFalseSharingDemo + SomeTLSData, Chapter2.Examples]]
         //  ...
         //  0000022a61982520 00007ffd9c5faba0       24    	Chapter2.Examples.ThreadLocalFalseSharingDemo+SomeTLSData
+        //  
+        //  Thus, although False Sharing may happen between TLS-based data, it is really (really) hard to recreate such scenario
         public void Run()
         {
             var threadId = Thread.CurrentThread.ManagedThreadId;
