@@ -7,11 +7,12 @@ using Microsoft.Diagnostics.Tracing;
 using Microsoft.Diagnostics.Tracing.Analysis;
 using Microsoft.Diagnostics.Tracing.Analysis.GC;
 using Microsoft.Diagnostics.Tracing.Parsers;
+using Microsoft.Diagnostics.Tracing.Parsers.Clr;
 
 namespace Chapter6.Examples
 {
-    [Description()]
-    class Program
+    [Description("Out-of-process monitoring based on EventPipes")]
+    class EventPipeProviderDemo
     {
         static void Main(string[] args)
         {
