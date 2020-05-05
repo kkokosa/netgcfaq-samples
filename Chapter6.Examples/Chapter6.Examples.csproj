@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -8,7 +8,13 @@
   <ItemGroup>
     <PackageReference Include="JonSkeet.DemoUtil" Version="1.2.0" />
     <PackageReference Include="Microsoft.Diagnostics.NETCore.Client" Version="0.2.61701" />
+    <PackageReference Include="Microsoft.Diagnostics.Runtime" Version="1.1.122004" />
     <PackageReference Include="Microsoft.Diagnostics.Tracing.TraceEvent" Version="2.0.55" />
+    <PackageReference Include="ObjectLayoutInspector" Version="0.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Chapter3.Core\Chapter3.Core.csproj" />
   </ItemGroup>
 
 </Project>
