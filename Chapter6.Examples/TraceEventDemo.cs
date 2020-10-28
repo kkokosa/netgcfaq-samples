@@ -12,6 +12,10 @@ using Microsoft.Diagnostics.Tracing.Session;
 
 namespace Chapter6.Examples
 {
+    /*
+     * Uses TraceEventSession for listening to ETW-based (filtered by some keywords)
+     * and additionally uses GLAD for high-level GCStats-like analysis.
+     */
     [Description("System-wide events listener")]
     class TraceEventDemo
     {

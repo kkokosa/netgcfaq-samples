@@ -13,6 +13,9 @@ using ObjectLayoutInspector;
 
 namespace Chapter6.Examples
 {
+    /*
+     * Uses ClrMd to self-attach and do some simple diagnostics.
+     */
     [Description("ClrMD demo")]
     class ClrMdDemo
     {

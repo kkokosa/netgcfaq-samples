@@ -11,6 +11,10 @@ using Microsoft.Diagnostics.Tracing.Parsers.Clr;
 
 namespace Chapter6.Examples
 {
+    /*
+     * Uses DiagnosticsClient for listening to EventPipes-based (filtered by some keywords)
+     * and additionally uses GLAD for high-level GCStats-like analysis.
+     */
     [Description("Out-of-process monitoring based on EventPipes")]
     class EventPipeProviderDemo
     {

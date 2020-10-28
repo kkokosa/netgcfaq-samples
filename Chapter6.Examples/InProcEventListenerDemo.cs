@@ -7,6 +7,11 @@ using System.Threading;
 
 namespace Chapter6.Examples
 {
+    /*
+     * Low-level in-process event listener
+     * 
+     * Not clear: does it use ETW or EventPipes?
+     */
     [Description("In-process event listener")]
     class InProcEventListenerDemo
     {
