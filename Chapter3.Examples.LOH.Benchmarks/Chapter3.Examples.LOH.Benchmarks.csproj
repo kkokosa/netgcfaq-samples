@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+      <OutputType>Exe</OutputType>
+      <TargetFramework>net5.0</TargetFramework>
+	  <LangVersion>preview</LangVersion>
+	  <Nullable>enable</Nullable>
+	  <WarningsAsErrors>nullable</WarningsAsErrors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Chapter3.Examples.LOH.Core\Chapter3.Examples.LOH.Core.csproj" />
+  </ItemGroup>
+
+</Project>
