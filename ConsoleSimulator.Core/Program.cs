@@ -18,6 +18,7 @@ namespace ConsoleSimulator.Core
         static void Main(string[] args)
         {
             Console.WriteLine($"Current PID: {Process.GetCurrentProcess().Id}");
+            Console.ReadLine();
             Task.Run(StatsTask);
             Task.Run(AllocatingTask);
             Task.Run(FreeingTask);

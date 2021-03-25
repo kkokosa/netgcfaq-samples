@@ -61,7 +61,7 @@ namespace Chapter3.Core
         private static Func<object, long> _method;
         static ObjectExtensions()
         {
-            var method = new DynamicMethod("CalliInvoke", typeof(long), new[] { typeof(object) });
+            var method = new DynamicMethod("DynamicInvoke", typeof(long), new[] { typeof(object) });
             var generator = method.GetILGenerator();
             generator.Emit(OpCodes.Ldarg_0);
             generator.Emit(OpCodes.Ret);

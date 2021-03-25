@@ -11,11 +11,11 @@ namespace Chapter3.Tests
 
     |      Method |      Mean |     Error |    StdDev |
     |------------ |----------:|----------:|----------:|
-    |  GetAddress | 0.8087 ns | 0.0563 ns | 0.0526 ns |
-    | GetAddress1 | 0.0350 ns | 0.0291 ns | 0.0272 ns |
-    | GetAddress2 | 1.3670 ns | 0.0462 ns | 0.0432 ns |
-    | GetAddress3 | 9.0657 ns | 0.2098 ns | 0.3992 ns |
-    | GetAddress4 | 2.7241 ns | 0.0792 ns | 0.0740 ns |
+    |  GetAddress | 0.8087 ns | 0.0563 ns | 0.0526 ns | Directly CIL-based
+    | GetAddress1 | 0.0350 ns | 0.0291 ns | 0.0272 ns | Unsafe.AsPointer based
+    | GetAddress2 | 1.3670 ns | 0.0462 ns | 0.0432 ns | TypedReference based
+    | GetAddress3 | 9.0657 ns | 0.2098 ns | 0.3992 ns | Struct explicit layout based (reintepret)
+    | GetAddress4 | 2.7241 ns | 0.0792 ns | 0.0740 ns | CIL-baed but emitted to DynamicMethod
      */
     [DisassemblyDiagnoser(printIL: true, printAsm: true, printPrologAndEpilog: true)]
     [SimpleJob(RuntimeMoniker.NetCoreApp31)]
