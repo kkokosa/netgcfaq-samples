@@ -17,6 +17,8 @@ namespace ConsoleSimulator.Core
 
         static void Main(string[] args)
         {
+            var obj = new C();
+            GCHandle.Alloc(obj, GCHandleType.Pinned);
             Console.WriteLine($"Current PID: {Process.GetCurrentProcess().Id}");
             Console.ReadLine();
             Task.Run(StatsTask);
@@ -24,6 +26,13 @@ namespace ConsoleSimulator.Core
             Task.Run(FreeingTask);
             Console.ReadLine();
         }
+
+        public class C
+        {
+            public int X;
+            public string S;
+        }
+
 
         private static void FreeingTask()
         {
